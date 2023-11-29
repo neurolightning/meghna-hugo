@@ -14,6 +14,7 @@
 		</div>
 		{{ end }}
 		<h1>{{ .title | markdownify }}</h1>
+		<h2 style="color: rgb(252, 252, 252);">{{ .subtitle | markdownify }}</h2>
 		<p>{{ .content | markdownify }}</p>
 		{{ if .button.enable }}
 		{{ with .button }}
